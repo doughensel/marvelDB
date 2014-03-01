@@ -1,0 +1,26 @@
+{
+  "name": "MarvelDB",
+  "version": "0.0.0",
+  "description": "Marvel Database using Marvel Comics API and Angular.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doughensel/marvelDB.git"
+  },
+  "keywords": [
+    "MarvelDB",
+    "Angular.js"
+  ],
+  "author": "Douglas Hensel",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/doughensel/marvelDB/issues"
+  },
+  "homepage": "https://github.com/doughensel/marvelDB",
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
