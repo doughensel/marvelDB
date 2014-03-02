@@ -36,7 +36,7 @@
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		// Set the url
 		curl_setopt($ch, CURLOPT_URL,$url);
-		curl_setopt( $ch, CURLOPT_USERAGENT, self::USER_AGENT );
+		curl_setopt( $ch, CURLOPT_USERAGENT, 'marvel-php/0.9.0' );
 		// Execute
 		$result=curl_exec($ch);
 
