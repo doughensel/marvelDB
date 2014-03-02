@@ -24,21 +24,23 @@
 	<?php 
 		include_once 'php/creds.php';
 		
-		$url = 'http://gateway.marvel.com/?' . http_build_query($params);
+		$url = 'http://gateway.marvel.com/v1/public/characters/?' . http_build_query($params);
 		print_r( http_build_query($params) );
 		echo '<br />';
 
-		// Initate cURL
+		//  Initiate curl
 		$ch = curl_init();
-		// Disable SSL
+		// Disable SSL verification
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		// Will return the response, if false it print the response
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_URL, $url);
+		// Set the url
+		curl_setopt($ch, CURLOPT_URL,$url);
+		// Execute
 		$result=curl_exec($ch);
-		print_r( $result );
-		echo '<br />';
 
-		print_r( var_dump(json_decode($result, true)) );
+		// Will dump a beauty json :3
+		var_dump(json_decode($result, true));
 
 	?>
 </p>
