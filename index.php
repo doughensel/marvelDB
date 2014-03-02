@@ -36,6 +36,7 @@
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		// Set the url
 		curl_setopt($ch, CURLOPT_URL,$url);
+		curl_setopt( $ch, CURLOPT_USERAGENT, self::USER_AGENT );
 		// Execute
 		$result=curl_exec($ch);
 
