@@ -20,6 +20,13 @@
 	Coming soon, to a true believer near you.
 </p>
 
+<p>
+	<?php 
+		include_once 'php/creds.php';
+		echo $ts;
+	?>
+</p>
+
 <!-- ///////////////////////// -->
 <!-- //		JAVASCRIPT		// -->
 <!-- ///////////////////////// -->
