@@ -23,7 +23,7 @@
 <p>
 	<?php 
 		include_once 'php/config.php';
-
+		
 		$url = 'http://gateway.marvel.com/v1/public/comics?' . http_build_query($params);
 
 		//  Initiate cURL
