@@ -22,7 +22,7 @@
 
 <p>
 	<?php 
-		include_once 'php/creds.php';
+		include_once 'php/config.php';
 		
 		$url = 'http://gateway.marvel.com/v1/public/characters/?' . http_build_query($params);
 		// print_r( http_build_query($params) );
