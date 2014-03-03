@@ -24,7 +24,7 @@
 	<?php 
 		include_once 'php/config.php';
 		
-		echo $params['apikey'];
+		// echo $params['apikey'];
 
 		$url = 'http://gateway.marvel.com/v1/comics/?' . http_build_query($params);
 		// print_r( http_build_query($params) );
