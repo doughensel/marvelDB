@@ -23,22 +23,13 @@
 <p>
 	<?php 
 		include_once 'php/config.php';
-		
-		// echo $params['apikey'];
+
 
 		$url = 'http://gateway.marvel.com/v1/public/comics?' . http_build_query($params);
-		// print_r( http_build_query($params) );
-		echo '<br />';
 
 		//  Initiate curl
 		$ch = curl_init();
-		// Disable SSL verification
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		// Will return the response, if false it print the response
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		// Set the url
-		curl_setopt($ch, CURLOPT_URL,$url);
-		curl_setopt( $ch, CURLOPT_USERAGENT, 'marvel-php/0.9.0' );
+
 		// Execute
 		$result=curl_exec($ch);
 
